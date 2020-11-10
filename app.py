@@ -63,6 +63,14 @@ guidestar_info = {
 app = Flask(__name__)
 
 @app.route('/essentials/v1', methods=['POST'])
+def post_guidestar():
+  return json.dumps(guidestar_info)
+
+@app.route('/', methods=['GET'])
+def get_root():
+  return json.dumps(guidestar_info)
+
+@app.route('/essentials/v1', methods=['GET'])
 def get_guidestar():
   return json.dumps(guidestar_info)
 
