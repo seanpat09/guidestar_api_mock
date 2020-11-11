@@ -5,6 +5,15 @@ so developers don't have to setup a trial.
 
 # Setup
 
+Install python3: https://www.python.org/downloads/
+
+Install requirements for project: `python3 -m pip install -r requirements.txt`
+
+This will install:
+
+* Flask: https://flask.palletsprojects.com/en/1.1.x/installation/
+* gunicorn: https://gunicorn.org/
+
 Install Heroku CLI: https://devcenter.heroku.com/articles/getting-started-with-python#set-up
 
 From the base of this project run
